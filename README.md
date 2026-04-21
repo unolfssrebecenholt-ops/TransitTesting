@@ -6,11 +6,35 @@
 - 原生 Prompt Caching 是否真实生效
 - 当前结果与历史基线的相对接近程度
 
+现在仓库里也包含一个可被 Agent 自动发现的 skill：`transit-probe/`。
+
 ## 项目结构
 
 - `app.py`：主程序
 - `probe.ini`：默认配置文件
 - `run_probe.sh`：默认启动脚本
+- `transit-probe/`：Skill 目录，包含 `SKILL.md`、`agents/openai.yaml`、包装脚本和配置模板
+
+## Hermes / Agent Skill
+
+如果你的 Hermes Agent 读取 Codex 风格的 skills 目录，这个 skill 已经可以直接使用。
+
+本地安装方式：
+
+- 仓库内 skill 源码：`transit-probe/`
+- 本地发现路径：`~/.codex/skills/transit-probe`
+
+skill 入口脚本：
+
+```bash
+python3 transit-probe/scripts/transit_probe.py --help
+```
+
+如果 Agent 通过 `$skill-name` 方式调用，使用名称：
+
+```text
+$transit-probe
+```
 
 ## 1. 初始化环境
 

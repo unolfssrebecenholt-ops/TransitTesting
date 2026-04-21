@@ -1,0 +1,7 @@
+interface:
+  display_name: "Transit Probe"
+  short_description: "Audit transit APIs for quality and cache claims."
+  default_prompt: "Use $transit-probe to audit this transit API endpoint for degradation, prompt caching, and baseline similarity."
+
+policy:
+  allow_implicit_invocation: true

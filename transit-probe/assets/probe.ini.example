@@ -1,0 +1,20 @@
+; Copy to probe.ini and fill values before running config-file mode.
+
+[probe]
+provider = openai
+base_url =
+api_key =
+model =
+timeout = 120
+cases_per_dimension = 5
+context_records = 36
+request_retries = 2
+skip_cache = false
+show_raw = false
+
+[report]
+report_out =
+report_label =
+
+[baseline]
+baseline_profile =
