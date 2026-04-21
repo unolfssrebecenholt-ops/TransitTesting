@@ -1,0 +1,9 @@
+[project]
+name = "transittesting"
+version = "0.1.0"
+description = "API quality probe CLI"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.28.1",
+    "rich>=15.0.0",
+]
